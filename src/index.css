@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .hoverEffect {
+    @apply duration-300 cursor-pointer;
+  }
+  .headerSedenavLi {
+    @apply hover:underline underline-offset-2 cursor-pointer text-gray-300 hover:text-white;
+  }
+}
+
+/* ============= NavLink active Start here ============== */
+nav .active li {
+  color: black;
+  font-weight: 600;
+  /* text-decoration: 1px underline black; */
+}
+
+@media screen and (max-width: 665px) {
+  nav .active li {
+    color: white;
+    font-weight: 600;
+    /* text-decoration: 1px underline white; */
+  }
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+/* ============= NavLink active End here ================ */
+/* ============= Slider Banner ================ */
+/* ============= Slider Banner End ================ */
+.slideBanner {
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.visibals {
+  display: none;
+}
+.media-banner-mobile-none {
+  display: none;
+}
+
+@media screen and (max-width: 666px) {
+  .mobiles {
+    padding-top: 1em;
+  }
+  .media-banner-bottom {
+    display: none;
+  }
+  .media-banner-mobile-none {
+    display: block;
+  }
+  .media-banner-none {
+    display: none;
+  }
+  .media-500 {
+    font-size: 13px;
+    color: rgba(37, 37, 37, 0.852);
+  }
+  .update-media {
+    display: none;
+  }
+  .visibals {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .banner-media {
+    display: none;
+  }
+  .fotter-media {
+    flex-direction: column;
+  }
+  .dis-none {
+    display: none;
+  }
+  .media-product {
+    display: none;
+  }
+  .media-pay {
+    display: none;
+    grid-template-columns: repeat(1fr, 1fr);
+  }
+  .media-atm {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .atmBank {
+    margin: 15px;
+  }
+  .atmBank-active {
+    padding: 0 !important;
+  }
+}
+.title-header {
+  font-weight: bold;
+  letter-spacing: 1.2px;
+  font-size: 20px;
+  display: inline-block;
+  padding: 4px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  background-color: black;
+  color: aliceblue;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.title-header-shop {
+  font-weight: bold;
+  letter-spacing: 1.2px;
+  font-size: 20px;
+  display: inline-block;
+  padding: 4px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: red;
+  color: aliceblue;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
